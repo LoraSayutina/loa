@@ -21,20 +21,21 @@ const props = withDefaults(defineProps<IProps>(), {
 .button {
   position: relative;
   display: inline-flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 60px;
   padding: 16px 32px;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--color-white);
   background: var(--color-primary);
-  border-radius: 16px;
+  border-radius: 20px;
+  width: 55px;
 
   &[data-layout='secondary'] {
     color: var(--color-primary);
-    background-color: var(--color-transparent);
+    background-color: var(--color-secondary);
     border-color: var(--color-primary);
   }
 }
